@@ -2,12 +2,12 @@
 #include <stdio.h>
 int main(void)
 {
-    float num;
+    int num;
 
     printf("Enter the value of num: ");
-    scanf("%f", &num);
+    scanf("%d", &num);
 
-    if (num % 97 = 0)
+    if ((num % 97) == 0)
     {
         printf("Number is divisible by 97");
     }
