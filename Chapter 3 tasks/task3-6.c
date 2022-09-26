@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-    int num1, num2, num 3, num4;
+    int num1, num2, num3, num4;
 
     printf("Enter the values of num1, num2, num3, and num4: ");
     scanf("%d %d %d %d", &num1, &num2, &num3, &num4);

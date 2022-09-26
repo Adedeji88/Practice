@@ -5,7 +5,7 @@ int main(void)
     float tax_amt;
 
     printf("Enter the amount of tax paid: ");
-    scanf("%f", tax_amt);
+    scanf("%f", &tax_amt);
 
     if((tax_amt >= 2.5) && (tax_amt <= 5.0))
     {
