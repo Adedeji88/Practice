@@ -1,23 +1,22 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
- * main - print first 10 natural numbers
- * Return: Always 0
+ * main - computing roots of a quadratic equation
+ * Return:Always 0
  */
 
 int main(void)
 {
-    int i = 0;
-    int sum = 0;
+    float a, d, x;
+    float b, c;
 
-    do 
-    {
-        sum = sum + i;
-    }
-    while(i <= 10)
-    {
-        i++;
-    }
-    printf("The sum of first 10 natural numbers is: %d", sum);
+    printf("Enter the values of a, b, and c: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    d = sqrt((b * b) - 4 * a * c);
+    x = (-b +- d)/ (2 * a);
+
+    printf("x is: %.4f", x);
     return(0);
 }

@@ -7,21 +7,23 @@
 
 int main(void)
 {
-    long int fact;
     int i, n;
+    unsigned long long fact = 1;
 
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    for(i = 1; i < n; i++)
+    if(n < 0)
     {
-        fact = n * (n - i);
+        printf("Error! The factorial of a negative number doesn't exist.");
     }
-    printf("Factorial is: %d", fact);
-
-    if(n == 0)
+    else
     {
-        return 1;
+        for(i = 1; i <= n; ++i)
+        {
+            fact *= i; 
+        }
+        printf("Factorial of %d = %llu", n, fact);
     }
     return(0);
 }
