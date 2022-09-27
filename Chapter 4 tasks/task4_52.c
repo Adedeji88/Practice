@@ -13,11 +13,9 @@ int main(void)
     do 
     {
         sum = sum + i;
-    }
-    while(i <= 10)
-    {
         i++;
     }
-    printf("The sum of first 10 natural numbers is: %d", sum);
+    while(i <= 10);
+        printf("The sum of first 10 natural numbers is: %d", sum);
     return(0);
 }

@@ -22,9 +22,13 @@ int main(void)
     {
         printf("num3 is the greatest");
     }
-    else
+    else if((num4 > num1) && (num1 > num2) && (num2 > num3))
     {
         printf("num4 is the greatest");
+    }
+    else
+    {
+        printf("They are all equal");
     }
     return(0);
 }
