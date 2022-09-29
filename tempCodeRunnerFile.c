@@ -1,22 +1,31 @@
 #include <stdio.h>
-#include <math.h>
 
-/**
- * main - computing roots of a quadratic equation
- * Return:Always 0
- */
+int main() {
 
-int main(void)
-{
-    float a, d, x;
-    float b, c;
+  int n, i, flag = 0;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
 
-    printf("Enter the values of a, b, and c: ");
-    scanf("%f %f %f", &a, &b, &c);
+  // 0 and 1 are not prime numbers
+  // change flag to 1 for non-prime number
+  if (n == 0 || n == 1)
+    flag = 1;
 
-    d = sqrt((b * b) - 4 * a * c);
-    x = (-b +- d)/ (2 * a);
+  for (i = 2; i <= n / 2; ++i) {
 
-    printf("x is: %.4f", x);
-    return(0);
+    // if n is divisible by i, then n is not prime
+    // change flag to 1 for non-prime number
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  // flag is 0 for prime numbers
+  if (flag == 0)
+    printf("%d is a prime number.", n);
+  else
+    printf("%d is not a prime number.", n);
+
+  return 0;
 }
