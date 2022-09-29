@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - Check whether an int is prime
+ * 
+ * Return: Always o
+ */
 int main(void)
 {
     int i, n, flag = 0;
