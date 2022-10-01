@@ -1,27 +1,14 @@
 #include <stdio.h>
-const int NUM = 10;
-/**
- * main - print multi table in reverse
- * Return: Always 0
- */
-
 int main(void)
 {
-    int i, j;
-    int prod, r, s;
+    int i, j, prod;
 
-    for(i = 1; i <= NUM; i++)
+    for(i = 1; i <= 10; i++)
     {
-        for(j = 1; j <= NUM; j++)
+        for(j = 10; j <= 10; j--)
         {
             prod = i * j;
-            r = prod % 10;
-            s = prod / 10;
-            print("");
-            putchar(' ');
+            printf("%d", prod);
         }
-        putchar('\n');
     }
-    putchar('\t');
-    return(0);
 }

@@ -1,26 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - sum of numbers in multi table
+ * main - sum of numbers in multi table 8
  * Return: Always 0;
  */
 
 int main(void)
 {
-    int i, j, k, prod;
-    int sum = 0;
+    int i, j, prod, sum = 0;
 
     if(i = 8)
     {
         for(j = 1; j <= 10; j++)
         {
             prod = i * j;
-            printf("%d", prod);
-            putchar('\n');
-
             sum = sum + prod;
-            printf("sum of the numbers in multiplication table is: %d", sum);
+            printf("Product of 8 is %d\n", j, prod);
         }
+        printf("sum of the products of 8 is %d", sum);
     }
     return(0);
 }
