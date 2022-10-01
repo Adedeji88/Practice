@@ -5,10 +5,10 @@ int main(void)
 
     for(i = 1; i <= 10; i++)
     {
-        for(j = 10; j <= 10; j--)
+        for(j = 10; j > 0; j--)
         {
             prod = i * j;
-            printf("%d", prod);
+            printf("%d\n", prod);
         }
     }
 }
