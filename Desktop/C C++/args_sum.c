@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
         putchar('\n');
     for(i = 1; i < argc; i++)
     {
-        sum = sum + &argv[i];
+        sum = sum + atoi(argv[i]);
         printf("%d", sum);
     }
+    return(0);
 }
