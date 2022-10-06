@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+/**
+* cubeNum - function to find cube of any number
+*
+* Return: 0.
+*/
+
+double cubeNum(double a)
+{
+	double cub;  /* cub means cube */
+	cub = a * a * a;
+	return(cub);
+}
+
+int main(void)
+{
+	double x, cube;
+	printf("Enter the number: ");
+	scanf("%lf", &x);
+	
+	cube = cubeNum(x);
+	printf("Cube of the number = %.4lf", cube);
+	
+	return(0);
+}

@@ -1,0 +1,44 @@
+#include <stdio.h>
+const float pi = 3.142;
+float D; /* D is diameter */
+
+/**
+* dimCircle - function to find the diameter, cirfumference and area of a circle
+* 
+* Return: 0.
+*/
+
+float diamCircle(float r)
+{
+	D = 2 * r; /* r is radius */
+	return(D);
+}
+
+float circumCircle(float D)
+{
+	float c; /*c is circumference */
+	c = pi * D;
+	return(c);
+}
+
+float areaCircle(float D)
+{
+	float a; /* a is area */
+	a = pi * (D * D) / 4;
+	return(a);
+}
+
+int main(void)
+{
+	float rad, diameter, area, circum;
+	printf("Enter the radius of circle: ");
+	scanf("%f", &rad);
+	
+	diameter = diamCircle(rad);
+	circum = circumCircle(diameter);
+	area = areaCircle(diameter);
+	
+	printf("The diameter, circumference, and area of the circle = %.4f, %.4f, and %.4f", diameter, circum, area);
+	
+	return(0);
+}
