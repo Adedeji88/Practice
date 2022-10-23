@@ -3,47 +3,34 @@
 
 int main(void)
 {
-    int i, n;
+    int *arr;
+    int ar[10001], i, n;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
 
-    int *j = malloc(sizeof(int) * 15000);
-    j = &i;
+    arr = (int *) malloc(sizeof(int) * 15000);
 
     for (i = 1; i <= n; i++)
     {
         if((i % 3) == 0 && (i % 15) != 0)
         {
-            printf("Fizz", i);
+            printf("a[%d] = Fizz", ar[i]);
         }
         else if((i % 5) == 0 && (i % 15) != 0)
         {
-            printf("Buzz", i);
+            printf("a[%d] = Buzz", ar[i]);
         }
         else if((i % 15) == 0)
         {
-            printf("FizzBuzz", i);
+            printf("a[%d] = FizzBuzz", ar[i]);
         }
-        else if(i < 9)
+        else
         {
-            putchar(i + '0');
-        }
-        else if((i > 9) && (i < 99))
-        {
-            putchar((i / 10) + '0');
-            putchar((i % 10) + '0'); 
-        }
-        else if((i > 99) && (i < 999))
-        {
-            printf("%d", i);
-        }
-        else if((i > 999) && (i < 9999))
-        {
-            printf("%d", i);
+            printf("%d", ar[i]);
         }
         putchar(' ');
     }
 
-    free(j);
+    free(arr);
     return(0);
 }
