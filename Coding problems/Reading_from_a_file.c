@@ -29,7 +29,7 @@ int main(void)
     printf("----read the entire file---");
     /* reset the pointer */
     file_pointer = fopen("fprintf_test.txt", "r");
-    while((c = getc(file_pointer)) != EOF)
+    while((c = fgetc(file_pointer)) != EOF)
     printf("%c", c);
 
     fclose(file_pointer);
