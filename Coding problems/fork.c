@@ -12,6 +12,8 @@
 int main(int argc, char* argv[])
 {
     fork();
+    fork();
+    fork();
     printf("Hello world.\n");
 
     return(0);
