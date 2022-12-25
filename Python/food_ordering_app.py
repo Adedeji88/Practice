@@ -11,3 +11,10 @@ count = 0
 for menu_item in menu_items:
     print(str(count) + '. ' + menu_item.info())
     count = count + 1
+    
+print('--------------------')
+    
+order = int(input('Enter menu item number: '))
+selected_item = menu_items[order]
+
+print('Selected item: ' + selected_item.name)
