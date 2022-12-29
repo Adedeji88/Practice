@@ -27,12 +27,22 @@ for drink in drinks:
 
 print('--------------------')
 
-food_order = int(input('Enter food item number: '))
-selected_food = foods[food_order]
-
-drink_order = int(input('Enter drink item number: '))
-selected_drink = drinks[drink_order]
-
+try:
+    food_order = int(input('Enter food item number: '))
+    selected_food = foods[food_order]
+except:
+    if food_order >= 3:
+        print("Out of range; please enter a number between 0 and 2")
+    quit()
+  
+try:
+    drink_order = int(input('Enter drink item number: '))
+    selected_drink = drinks[drink_order]
+except:
+    if drink_order >= 3:
+        print("Out of range; please enter an item number between 0 and 2")
+    quit()
+    
 # Take input from the console and assign it to the count variable
 count = int(input('How many meals would you like to purchase? (10% off for 3 or more): '))
 
