@@ -32,7 +32,7 @@ try:
     selected_food = foods[food_order]
 except:
     if food_order >= 3:
-        print("Out of range; please enter a number between 0 and 2")
+        print("Out of range; please enter an item number between 0 and 2")
     quit()
   
 try:
